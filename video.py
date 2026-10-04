@@ -552,7 +552,7 @@ class S06_Mim(Narrated):
         root_txt = ar("أ م ن", 100, MIM).move_to([3.0, 1.0, 0])
         arrow = Arrow([3.0, 0.2, 0], [3.0, -0.7, 0], color=GREY_B, buff=0)
         guven = tr("güven · emniyet", 44, MIM).move_to([3.0, -1.3, 0])
-        kapanma = tr("kapanma · toparlanma", 26, GREY_A).next_to(tract.lips, DOWN, buff=0.6).align_to(tract.lips, RIGHT)
+        kapanma = tr("kapanma · toparlanma", 26, GREY_A).next_to(tract.lips, DOWN, buff=0.6).align_to(tract.lips, RIGHT).shift(RIGHT * 0.5)
         self.say("emniyet")
         self.play(FadeIn(kapanma, shift=UP * 0.15), run_time=0.8)
         self.until(2.4)
