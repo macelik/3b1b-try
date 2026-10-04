@@ -1,0 +1,6 @@
+media/
+__pycache__/
+build.log
+tts.log
+audio/*.take*.wav
+audio/*.raw.wav
